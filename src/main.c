@@ -87,7 +87,7 @@ void main(void)
     TIMSK=(0<<OCIE2) | (0<<TOIE2) | (0<<TICIE1) | (1<<OCIE1A) | (0<<OCIE1B) | (0<<TOIE1) | (0<<OCIE0) | (0<<TOIE0);
 
     
-    Key_init(&keyDriver);  
+    Key_init(&KEY_DRIVER);  
     Key_add(&key1, &keyConfig1);
     Key_add(&key2, &keyConfig2);
     Key_add(&key3, &keyConfig3);
